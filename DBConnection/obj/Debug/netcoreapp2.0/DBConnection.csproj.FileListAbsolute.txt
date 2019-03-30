@@ -1,0 +1,9 @@
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\DBConnection\bin\Debug\netcoreapp2.0\DBConnection.deps.json
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\DBConnection\bin\Debug\netcoreapp2.0\DBConnection.dll
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\DBConnection\bin\Debug\netcoreapp2.0\DBConnection.pdb
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\DBConnection\obj\Debug\netcoreapp2.0\DBConnection.csproj.CoreCompileInputs.cache
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\DBConnection\obj\Debug\netcoreapp2.0\DBConnection.AssemblyInfoInputs.cache
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\DBConnection\obj\Debug\netcoreapp2.0\DBConnection.AssemblyInfo.cs
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\DBConnection\obj\Debug\netcoreapp2.0\DBConnection.dll
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\DBConnection\obj\Debug\netcoreapp2.0\DBConnection.pdb
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\DBConnection\obj\Debug\netcoreapp2.0\DBConnection.csprojResolveAssemblyReference.cache

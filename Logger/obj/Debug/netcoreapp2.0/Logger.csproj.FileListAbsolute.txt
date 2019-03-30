@@ -1,0 +1,8 @@
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\Logger\bin\Debug\netcoreapp2.0\Logger.deps.json
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\Logger\bin\Debug\netcoreapp2.0\Logger.dll
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\Logger\bin\Debug\netcoreapp2.0\Logger.pdb
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\Logger\obj\Debug\netcoreapp2.0\Logger.csproj.CoreCompileInputs.cache
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\Logger\obj\Debug\netcoreapp2.0\Logger.AssemblyInfoInputs.cache
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\Logger\obj\Debug\netcoreapp2.0\Logger.AssemblyInfo.cs
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\Logger\obj\Debug\netcoreapp2.0\Logger.dll
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\Logger\obj\Debug\netcoreapp2.0\Logger.pdb

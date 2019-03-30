@@ -1,0 +1,14 @@
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\bin\Debug\netcoreapp2.0\SignUp.deps.json
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\bin\Debug\netcoreapp2.0\SignUp.dll
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\bin\Debug\netcoreapp2.0\SignUp.pdb
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\bin\Debug\netcoreapp2.0\Logger.dll
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\bin\Debug\netcoreapp2.0\Logger.pdb
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\obj\Debug\netcoreapp2.0\SignUp.csprojResolveAssemblyReference.cache
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\obj\Debug\netcoreapp2.0\SignUp.csproj.CoreCompileInputs.cache
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\obj\Debug\netcoreapp2.0\SignUp.AssemblyInfoInputs.cache
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\obj\Debug\netcoreapp2.0\SignUp.AssemblyInfo.cs
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\obj\Debug\netcoreapp2.0\SignUp.csproj.CopyComplete
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\obj\Debug\netcoreapp2.0\SignUp.dll
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\obj\Debug\netcoreapp2.0\SignUp.pdb
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\bin\Debug\netcoreapp2.0\DBConnection.dll
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\SignIn\bin\Debug\netcoreapp2.0\DBConnection.pdb
