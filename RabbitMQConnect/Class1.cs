@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Operation
+namespace RabbitMQConnect
 {
     public class Class1
     {

@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logger", "Logger\Logger.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBConnection", "DBConnection\DBConnection.csproj", "{C2AB688A-BFA6-41B4-8ED2-AC22F1D9267F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth", "Auth\Auth.csproj", "{DAA5751E-4484-4404-9E26-55FA5B3D5959}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth", "Auth\Auth.csproj", "{DAA5751E-4484-4404-9E26-55FA5B3D5959}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operation", "Operation\Operation.csproj", "{508D9A82-12F9-4CC4-88ED-410E337911B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operation", "Operation\Operation.csproj", "{508D9A82-12F9-4CC4-88ED-410E337911B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQConnect", "RabbitMQConnect\RabbitMQConnect.csproj", "{C5DEC6F6-2B9E-41CD-929C-FACC0D4C259B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{508D9A82-12F9-4CC4-88ED-410E337911B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{508D9A82-12F9-4CC4-88ED-410E337911B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{508D9A82-12F9-4CC4-88ED-410E337911B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5DEC6F6-2B9E-41CD-929C-FACC0D4C259B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DEC6F6-2B9E-41CD-929C-FACC0D4C259B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DEC6F6-2B9E-41CD-929C-FACC0D4C259B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DEC6F6-2B9E-41CD-929C-FACC0D4C259B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
