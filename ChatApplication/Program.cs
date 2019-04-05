@@ -2,6 +2,7 @@
 using Auth;
 using Logger;
 using Operation;
+using RabbitMQConnect;
 
 namespace ChatApplication
 {
@@ -48,7 +49,7 @@ namespace ChatApplication
                     }
                     catch (FormatException e)
                     {
-                        //logManager.Log(e.Message);
+                        logManager.Log(e.Message);
                         Console.WriteLine("Please Provide Proper Number In Input.");
                     }
                 }
@@ -92,6 +93,13 @@ namespace ChatApplication
             //Console.Read();
             //Console.WriteLine(startInfo);
             logManager.Log("Successfully got info");
+
+
+    //         Send("IDG","Hello World!");
+    //  Receive("IDG");
+    //  Console.ReadLine();
+
+
             Console.Read();
 
         }

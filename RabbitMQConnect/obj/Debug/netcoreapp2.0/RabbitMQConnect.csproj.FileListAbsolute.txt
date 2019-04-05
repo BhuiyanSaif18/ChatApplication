@@ -1,0 +1,9 @@
+/home/saif/ChatApplication/RabbitMQConnect/bin/Debug/netcoreapp2.0/RabbitMQConnect.deps.json
+/home/saif/ChatApplication/RabbitMQConnect/bin/Debug/netcoreapp2.0/RabbitMQConnect.dll
+/home/saif/ChatApplication/RabbitMQConnect/bin/Debug/netcoreapp2.0/RabbitMQConnect.pdb
+/home/saif/ChatApplication/RabbitMQConnect/obj/Debug/netcoreapp2.0/RabbitMQConnect.csprojAssemblyReference.cache
+/home/saif/ChatApplication/RabbitMQConnect/obj/Debug/netcoreapp2.0/RabbitMQConnect.csproj.CoreCompileInputs.cache
+/home/saif/ChatApplication/RabbitMQConnect/obj/Debug/netcoreapp2.0/RabbitMQConnect.AssemblyInfoInputs.cache
+/home/saif/ChatApplication/RabbitMQConnect/obj/Debug/netcoreapp2.0/RabbitMQConnect.AssemblyInfo.cs
+/home/saif/ChatApplication/RabbitMQConnect/obj/Debug/netcoreapp2.0/RabbitMQConnect.dll
+/home/saif/ChatApplication/RabbitMQConnect/obj/Debug/netcoreapp2.0/RabbitMQConnect.pdb
