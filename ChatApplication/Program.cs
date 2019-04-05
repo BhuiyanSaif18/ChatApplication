@@ -17,7 +17,7 @@ namespace ChatApplication
             bool loggedIn = true;
             int startInfo = 0;
             int operation = 0;
-            string userName;
+            string userName = "";
             string password;
 
             switch (loggerType)
@@ -93,8 +93,19 @@ namespace ChatApplication
             //Console.Read();
             //Console.WriteLine(startInfo);
             logManager.Log("Successfully got info");
-
-
+            Rabbit rb = new Rabbit();
+            string p ="Hello";
+            string[] stringArray = new string[2]{"saif", "sharif"};
+            System.Console.WriteLine("Reciever");
+            int reciver= 0;
+            reciver= Convert.ToInt32(Console.ReadLine());
+            while(p!="Quit"){
+                p=Console.ReadLine();
+                rb.Send(stringArray[reciver], p);
+                //System.Console.WriteLine("Recieving Data");
+                rb.Receive(userName);
+            }
+            
     //         Send("IDG","Hello World!");
     //  Receive("IDG");
     //  Console.ReadLine();

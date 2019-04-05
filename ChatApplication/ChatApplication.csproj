@@ -9,6 +9,7 @@
     <ProjectReference Include="..\Auth\Auth.csproj" />
     <ProjectReference Include="..\Logger\Logger.csproj" />
     <ProjectReference Include="..\Operation\Operation.csproj" />
+    <ProjectReference Include="..\RabbitMQConnect\RabbitMQConnect.csproj" />
   </ItemGroup>
 
 </Project>

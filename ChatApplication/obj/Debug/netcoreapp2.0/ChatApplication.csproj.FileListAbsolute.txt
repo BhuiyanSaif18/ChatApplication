@@ -38,3 +38,5 @@ C:/Users/saiful.bhuiya/source/repos/ChatApplication/ChatApplication/bin/Debug/ne
 /home/saif/ChatApplication/ChatApplication/obj/Debug/netcoreapp2.0/ChatApplication.csproj.CopyComplete
 /home/saif/ChatApplication/ChatApplication/obj/Debug/netcoreapp2.0/ChatApplication.dll
 /home/saif/ChatApplication/ChatApplication/obj/Debug/netcoreapp2.0/ChatApplication.pdb
+/home/saif/ChatApplication/ChatApplication/bin/Debug/netcoreapp2.0/RabbitMQConnect.dll
+/home/saif/ChatApplication/ChatApplication/bin/Debug/netcoreapp2.0/RabbitMQConnect.pdb

@@ -21,7 +21,7 @@ namespace RabbitMQConnect
             }
             
         }
-        public static void Send(string queue, string data)
+        public void Send(string queue, string data)
         {
             using (IConnection connection = new ConnectionFactory().CreateConnection())
             {
@@ -32,7 +32,7 @@ namespace RabbitMQConnect
                 }
             }
         }
-        public static void Receive(string queue)
+        public void Receive(string queue)
         {
             using (IConnection connection = new ConnectionFactory().CreateConnection())
             {
@@ -50,12 +50,12 @@ namespace RabbitMQConnect
                 }
             }
         }
-        static void Main(string[] args)
-        {
-            Send("IDG","Hello World!");
-            Receive("IDG");
-            Console.ReadLine();
-        }
+        // static void Main(string[] args)
+        // {
+        //     Send("IDG","Hello World!");
+        //     Receive("IDG");
+        //     Console.ReadLine();
+        // }
         
     }
 }
