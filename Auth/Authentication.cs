@@ -6,7 +6,7 @@ namespace Auth
 {
     public class Authentication
     {
-        DBConnect db = new DBConnect();
+        private DBConnect db = new DBConnect();
         public bool findUser(string userName, string password)
         {
             
@@ -29,7 +29,6 @@ namespace Auth
         }
         public void logOutUser(string userName)
         {
-            DBConnect db = new DBConnect();
             db.logOut(userName);
             Console.WriteLine("User Logout Successful");
         }
