@@ -4,8 +4,11 @@ using System.Text;
 
 namespace RabbitMQConnect
 {
+    
     public class Rabbit
     {
+        static IConnection connection = new ConnectionFactory().CreateConnection();
+        static IModel channel = connection.CreateModel();
         public IConnection GetConnection(string hostName, string userName, string password)
         {
             ConnectionFactory connectionFactory = new ConnectionFactory();
@@ -23,32 +26,33 @@ namespace RabbitMQConnect
         }
         public void Send(string queue, string data)
         {
-            using (IConnection connection = new ConnectionFactory().CreateConnection())
-            {
-                using (IModel channel = connection.CreateModel())
-                {
-                    channel.QueueDeclare(queue, false, false, false, null);
-                    channel.BasicPublish(string.Empty, queue, null, Encoding.UTF8.GetBytes(data));
-                }
-            }
+            channel.QueueDeclare(queue, false, false, false, null);
+            channel.BasicPublish(string.Empty, queue, null, Encoding.UTF8.GetBytes(data));
         }
         public void Receive(string queue)
         {
-            using (IConnection connection = new ConnectionFactory().CreateConnection())
-            {
-                using (IModel channel = connection.CreateModel())
+            
+            channel.QueueDeclare(queue, false, false, false, null);
+            var consumer = new RabbitMQ.Client.Events.EventingBasicConsumer(channel);
+            BasicGetResult result = channel.BasicGet(queue, true);
+            if (result != null)
                 {
-               channel.QueueDeclare(queue, false, false, false, null);
-               var consumer = new RabbitMQ.Client.Events.EventingBasicConsumer(channel);
-               BasicGetResult result = channel.BasicGet(queue, true);
-                    if (result != null)
-                    {
-                      string data =
-                      Encoding.UTF8.GetString(result.Body);
-                        Console.WriteLine(data);
-                    }
+                    string data =
+                    Encoding.UTF8.GetString(result.Body);
+                    Console.WriteLine(data);
+                    //System.Console.WriteLine(result.MessageCount);
                 }
-            }
+        }
+        public int getCount(string queue){
+            channel.QueueDeclare(queue, false, false, false, null);
+            var consumer = new RabbitMQ.Client.Events.EventingBasicConsumer(channel);
+            BasicGetResult result = channel.BasicGet(queue, true);
+            if (result != null)
+                {
+                    return Convert.ToInt32(result.MessageCount);
+                    
+                }
+            return 0;
         }
         // static void Main(string[] args)
         // {
@@ -56,6 +60,10 @@ namespace RabbitMQConnect
         //     Receive("IDG");
         //     Console.ReadLine();
         // }
+        public void Destroy(){
+            channel.Close();
+            connection.Close();
+        }
         
     }
 }

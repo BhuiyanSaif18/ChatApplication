@@ -7,16 +7,15 @@ namespace DBConnection
     public class DBConnect
     {
         //private Object db;
-        IMongoClient client;
-        IMongoDatabase db;
-        IMongoCollection<UserAuth> colauth;
+        static IMongoClient client = new MongoClient();
+        static IMongoDatabase db;
+        static IMongoCollection<UserAuth> colauth;
         
         public DBConnect()
         {
-            client = new MongoClient();
+            //client = ;
             db = client.GetDatabase("ChatApplication");
             colauth = db.GetCollection<UserAuth>("UserAuth");
-            Console.WriteLine("Db Constructor");
         }
         public void insertUser(string userName, string password)
         {
@@ -24,7 +23,7 @@ namespace DBConnection
             var id = Guid.NewGuid().ToString();
 
             document._id = id;
-            document.login = false;
+            document.login = true;
             document.username = userName;
             document.password = password;
 
@@ -42,12 +41,27 @@ namespace DBConnection
                 {
                     var filter = Builders<UserAuth>.Filter.Eq("login", false);
                     var update = Builders<UserAuth>.Update.Set("login", true);
-                    colauth.UpdateOne(filter, update);
+                    colauth.UpdateOneAsync(filter, update);
                     return true;
                 }
                     
             }
             return false;
+        }
+        public void logOut(string userName)
+        {
+            
+            var user = colauth.Find(b => b.username == userName).Limit(100).ToListAsync().Result;
+            
+            foreach (var u in user)
+            { 
+                if (u.username == userName)
+                {
+                    var filter = Builders<UserAuth>.Filter.Eq("login", true);
+                    var update = Builders<UserAuth>.Update.Set("login", false);
+                    colauth.UpdateOneAsync(filter, update);
+                }       
+            }
         }
         public string queryActiveUser()
         {
