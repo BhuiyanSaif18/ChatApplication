@@ -7,10 +7,12 @@ namespace Operation
 {
     public class Query
     {
-        public void ShowActiveUser()
+        public string[] ShowActiveUser()
         {
+            string[] users = new string[120]; 
             DBConnect db = new DBConnect();
-            db.queryActiveUser();
+            users = db.queryActiveUser();
+            return users;
         }    
     }
 }

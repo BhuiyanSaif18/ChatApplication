@@ -63,14 +63,19 @@ namespace DBConnection
                 }       
             }
         }
-        public string queryActiveUser()
+        public string[] queryActiveUser()
         {
             var user = colauth.Find(b => b.login == true).Limit(100).ToListAsync().Result;
+            string[] userList = new string[120];
+            //Console.WriteLine(user.Count);
+            var i = 0;
             foreach (var u in user)
             {
-                Console.WriteLine(u.username);
+                userList[i] = u.username;
+                i++;
+                //Console.WriteLine(u.username);
             }
-            return "user";
+            return userList;
         }
         public string queryMessage()
         {

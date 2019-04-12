@@ -9,12 +9,16 @@ namespace RabbitMQConnect
     {
         static IConnection connection = new ConnectionFactory().CreateConnection();
         static IModel channel = connection.CreateModel();
+        public Rabbit()
+        {
+            GetConnection("172.16.0.160", "test", "test");
+        }
         public IConnection GetConnection(string hostName, string userName, string password)
         {
             ConnectionFactory connectionFactory = new ConnectionFactory();
-            connectionFactory.HostName = "172.20.10.2";
-            connectionFactory.UserName = "guest";
-            connectionFactory.Password = "guest";
+            connectionFactory.HostName = "172.16.0.160";
+            connectionFactory.UserName = "test";
+            connectionFactory.Password = "test";
             try{
                 System.Console.WriteLine("Connection established");
                 return connectionFactory.CreateConnection();

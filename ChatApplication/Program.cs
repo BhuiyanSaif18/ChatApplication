@@ -19,6 +19,7 @@ namespace ChatApplication
             int operation = 0;
             string userName = "";
             string password;
+            string[] ActiveUsers = new string[120];
 
             switch (loggerType)
             {
@@ -33,11 +34,12 @@ namespace ChatApplication
                     break;
             }
             LogManager logManager = new LogManager(logger);
-            
+            Query q = new Query();
+            Authentication a = new Authentication();
 
             Console.WriteLine("To Log In Press 1");
             Console.WriteLine("To Sign Up Press 2");
-            Authentication a = new Authentication();
+
             while (loggedIn)
             {
                 while (properData)
@@ -84,11 +86,16 @@ namespace ChatApplication
             }
             Console.WriteLine("For showing all User press 1");
             operation = Convert.ToInt32(Console.ReadLine());
+
             switch (operation)
             {
                 case 1:
-                    Query q = new Query();
-                    q.ShowActiveUser();
+
+                    ActiveUsers = q.ShowActiveUser();
+                    for(var i =0;i< ActiveUsers.Length; i++)
+                    {
+                        Console.WriteLine("{0} {1}", i+1, ActiveUsers[i]);
+                    }
                     break;
             }
 
@@ -97,19 +104,19 @@ namespace ChatApplication
             logManager.Log("Successfully got info");
             Rabbit rb = new Rabbit();
             string p ="Hello";
-            string[] stringArray = new string[2]{"saif", "sharif"};
+            //string[] stringArray = new string[2]{"saif", "sharif"};
             System.Console.WriteLine("Reciever");
             int reciver= 0;
             reciver= Convert.ToInt32(Console.ReadLine());
-            while(p!="Quit"){
-                p=Console.ReadLine();
-                rb.Send(stringArray[reciver], p);
+            //while(p!="Quit"){
+            //    p=Console.ReadLine();
+            //    rb.Send("ChatApp", p);
                 //System.Console.WriteLine("Recieving Data");
-                while(rb.getCount(userName)>0){
-                    rb.Receive(userName);
-                }
+            //    while(rb.getCount("ChatApp") >0){
+            //        rb.Receive("ChatApp");
+            //    }
                 
-            }
+           // }
             System.Console.WriteLine("Press 0 to Logout");
             int logoutInfo = Convert.ToInt32(Console.ReadLine());
             if(logoutInfo == 0){

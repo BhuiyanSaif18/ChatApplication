@@ -7,3 +7,12 @@
 /home/saif/ChatApplication/RabbitMQConnect/obj/Debug/netcoreapp2.0/RabbitMQConnect.AssemblyInfo.cs
 /home/saif/ChatApplication/RabbitMQConnect/obj/Debug/netcoreapp2.0/RabbitMQConnect.dll
 /home/saif/ChatApplication/RabbitMQConnect/obj/Debug/netcoreapp2.0/RabbitMQConnect.pdb
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\RabbitMQConnect\bin\Debug\netcoreapp2.0\RabbitMQConnect.deps.json
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\RabbitMQConnect\bin\Debug\netcoreapp2.0\RabbitMQConnect.dll
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\RabbitMQConnect\bin\Debug\netcoreapp2.0\RabbitMQConnect.pdb
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\RabbitMQConnect\obj\Debug\netcoreapp2.0\RabbitMQConnect.csprojResolveAssemblyReference.cache
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\RabbitMQConnect\obj\Debug\netcoreapp2.0\RabbitMQConnect.csproj.CoreCompileInputs.cache
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\RabbitMQConnect\obj\Debug\netcoreapp2.0\RabbitMQConnect.AssemblyInfoInputs.cache
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\RabbitMQConnect\obj\Debug\netcoreapp2.0\RabbitMQConnect.AssemblyInfo.cs
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\RabbitMQConnect\obj\Debug\netcoreapp2.0\RabbitMQConnect.dll
+C:\Users\saiful.bhuiya\source\repos\ChatApplication\RabbitMQConnect\obj\Debug\netcoreapp2.0\RabbitMQConnect.pdb
