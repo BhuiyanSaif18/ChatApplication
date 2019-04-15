@@ -11,7 +11,7 @@ namespace RabbitMQConnect
         static IModel channel = connection.CreateModel();
         public Rabbit()
         {
-            GetConnection("172.16.0.160", "test", "test");
+            //GetConnection("172.16.0.160", "test", "test");
         }
         public IConnection GetConnection(string hostName, string userName, string password)
         {

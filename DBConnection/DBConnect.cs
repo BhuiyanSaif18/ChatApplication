@@ -8,14 +8,16 @@ namespace DBConnection
     {
         //private Object db;
         static IMongoClient client = new MongoClient();
-        static IMongoDatabase db;
-        static IMongoCollection<UserAuth> colauth;
+        static IMongoDatabase db = client.GetDatabase("ChatApplication");
+        static IMongoCollection<UserAuth> colauth = db.GetCollection<UserAuth>("UserAuth");
+
+        //static  db = 
         
         public DBConnect()
         {
             //client = ;
-            db = client.GetDatabase("ChatApplication");
-            colauth = db.GetCollection<UserAuth>("UserAuth");
+            // db = 
+            // colauth ;
         }
         public void insertUser(string userName, string password)
         {
@@ -37,10 +39,13 @@ namespace DBConnection
             
             foreach (var u in user)
             { 
+                System.Console.WriteLine(u.username);
                 if (u.password == password)
                 {
-                    var filter = Builders<UserAuth>.Filter.Eq("login", false);
+                    var filter = Builders<UserAuth>.Filter.Eq("_id", u._id);
                     var update = Builders<UserAuth>.Update.Set("login", true);
+                    System.Console.WriteLine(filter);
+                    System.Console.WriteLine(update);
                     colauth.UpdateOneAsync(filter, update);
                     return true;
                 }
